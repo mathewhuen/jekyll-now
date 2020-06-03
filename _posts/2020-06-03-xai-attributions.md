@@ -17,6 +17,7 @@ How can the points be fairly distributed?
 Whoever contributed the most should get the most points, right? It seems fair that bonus points received should be proportional to individual contribution to the group score. Let's calculate some examples.
 
 1 Suppose each student answered exactly one problem. Then it's easy, each student should receive one point:
+
 | Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
 |-------|--------|---------|-------|-------|-------|
 | Student A | O | - | - | - | 1 |
