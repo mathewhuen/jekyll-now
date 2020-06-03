@@ -18,12 +18,12 @@ Whoever contributed the most should get the most points, right? It seems fair th
 
 1 Suppose each student answered exactly one problem. Then it's easy, each student should receive one point:
 
-| Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
-|-------|--------|---------|-------|-------|-------|
-| Student A | O | - | - | - | 1 |
-| Student B | - | O | - | - | 1 |
-| Student C | - | - | O | - | 1 |
-| Student D | - | - | - | O | 1 |
+| Student |  | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
+|-------|--------|---------|-------|-------|-------|-------|
+| Student A |  | O | - | - | - | 1 |
+| Student B |  | - | O | - | - | 1 |
+| Student C |  | - | - | O | - | 1 |
+| Student D |  | - | - | - | O | 1 |
 
 
 2 Suppose one student knew zero answers, one knew two answers, and two knew exactly one answer. Again, this is easy--students can receive points equal to the number of problems they answered:
