@@ -18,9 +18,8 @@ Whoever contributed the most should get the most points, right? It seems fair th
 
 1 Suppose each student answered exactly one problem. Then it's easy, each student should receive one point:
 
-|---
-| Student |  | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
-|:-------|--------|:---------:|:-------:|:-------:|:-------:|:--------------------:|
+| Student\Problem |  | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
+|:-------|--------|:---------:|:-------:|:-------:|:-------:|:----------:|
 | Student A |  | O | - | - | - | 1 |
 | Student B |  | - | O | - | - | 1 |
 | Student C |  | - | - | O | - | 1 |
@@ -28,6 +27,7 @@ Whoever contributed the most should get the most points, right? It seems fair th
 
 
 2 Suppose one student knew zero answers, one knew two answers, and two knew exactly one answer. Again, this is easy--students can receive points equal to the number of problems they answered:
+
 | Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
 |-------|--------|---------|-------|-------|-------|
 | Student A | O | - | - | - | 1 |
@@ -38,6 +38,7 @@ Whoever contributed the most should get the most points, right? It seems fair th
 So far, not so hard. But let's formalize this logic. For each student, we look at the number of correct answers the group could get with that student missing and calculate how many more questions they could answer when we add that student in. This seems to give the marginal contribution of that student. If f(x) is the score for group x, then the marginal value of student s in group x is M(x) = f(x)-f(x/s). For example 2 above, M(D) = f({A,B,C,D}) - f({A,B,C}) = 4 - 2 = 2. Thus, Student D should receive 2 points.
 
 However, things get a little more tricky if multiple students can answer the same question. Suppose student A can answer question 1, student B doesn't know any answers, and both students C and D can answer problems 2, 3, and 4:
+
 | Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
 |-------|--------|---------|-------|-------|-------|
 | Student A | O | - | - | - | ? |
