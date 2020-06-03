@@ -11,14 +11,24 @@ So how are attributions calculated? Let's start with an abstract example. Suppos
 
 How can the points be fairly distributed?
 
-Whoever contributed the most should get the most points, right? It seems fair that bonus points received should be proportional to individual contribution to the group score. Easy, let's calculate some examples.
+Whoever contributed the most should get the most points, right? It seems fair that bonus points received should be proportional to individual contribution to the group score. Let's calculate some examples.
 
-| Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 |
-|-------|--------|---------|-------|-------|
-| Student A | O |  |  |  |
-| Student B | O |  |  |  |
-| Student C | O |  |  |  |
-| Student D | O |  |  |  |
+Suppose each student answered exactly one problem. Then it's easy, each student should receive one point:
+| Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
+|-------|--------|---------|-------|-------|-------|
+| Student A | O | - | - | - | 1 |
+| Student B | - | O | - | - | 1 |
+| Student C | - | - | O | - | 1 |
+| Student D | - | - | - | O | 1 |
+
+
+Suppose one student knew zero answers, one knew two answers, and two knew exactly one answer. Again, this is easy--students can receive points equal to the number of problems they answered:
+| Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
+|-------|--------|---------|-------|-------|-------|
+| Student A | O | - | - | - | 1 |
+| Student B | - | O | - | - | 1 |
+| Student C | - | - | - | - | 0 |
+| Student D | - | - | O | O | 2 |
 
 
 
