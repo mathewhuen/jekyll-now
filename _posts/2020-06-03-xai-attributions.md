@@ -18,18 +18,18 @@ Whoever contributed the most should get the most points, right? It seems fair th
 
 1 Suppose each student answered exactly one problem. Then it's easy, each student should receive one point:
 
-| Student\Problem |  | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
-|:-------|--------|:---------:|:-------:|:-------:|:-------:|:----------:|
-| Student A |  | O | - | - | - | 1 |
-| Student B |  | - | O | - | - | 1 |
-| Student C |  | - | - | O | - | 1 |
-| Student D |  | - | - | - | O | 1 |
+| Student\Problem | P1 | P2 | P3 | P4 | Bonus |
+|:-------|:---------:|:-------:|:-------:|:-------:|:----------:|
+| Student A | O | - | - | - | 1 |
+| Student B | - | O | - | - | 1 |
+| Student C | - | - | O | - | 1 |
+| Student D | - | - | - | O | 1 |
 
 
 2 Suppose one student knew zero answers, one knew two answers, and two knew exactly one answer. Again, this is easy--students can receive points equal to the number of problems they answered:
 
-| Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
-|-------|--------|---------|-------|-------|-------|
+| Student\Problem | P1 | P2 | P3 | P4 | Bonus |
+|:-------|:---------:|:-------:|:-------:|:-------:|:----------:|
 | Student A | O | - | - | - | 1 |
 | Student B | - | O | - | - | 1 |
 | Student C | - | - | - | - | 0 |
@@ -39,8 +39,8 @@ So far, not so hard. But let's formalize this logic. For each student, we look a
 
 However, things get a little more tricky if multiple students can answer the same question. Suppose student A can answer question 1, student B doesn't know any answers, and both students C and D can answer problems 2, 3, and 4:
 
-| Student # | Problem 1 | Problem 2 | Problem 3 | Problem 4 | Bonus |
-|-------|--------|---------|-------|-------|-------|
+| Student\Problem | P1 | P2 | P3 | P4 | Bonus |
+|:-------|:---------:|:-------:|:-------:|:-------:|:----------:|
 | Student A | O | - | - | - | ? |
 | Student B | - | - | - | - | ? |
 | Student C | - | O | O | O | ? |
