@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
-My main research areas are Computer Vision, Graph Neural Networks, Topological Data Analysis (TDA), and Explainable AI (XAI).
+My main research areas are 
+* Computer Vision, 
+* Graph Neural Networks, 
+* Topological Data Analysis (TDA), and 
+* Explainable AI (XAI).
 
 {% comment %}
 ### More Information
