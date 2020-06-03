@@ -82,7 +82,7 @@ M(s) = (f(x) - f(x/s) + f({s}) - f({})) / 2
 
 since we can say the score assigned to a group of no students is zero. Do you see a pattern? We are looking at two subgroups (x/s and the empty subgroup) of the original group x that are missing s, and calculating the average score difference when s is added to those subgroups. The complete answer is to calculate this average over all subgroups missing s (the power set of x/s).
 
-M(s) = 1/n * Sigma({f(y) | y in power(x/s)}), where n is the size of the power set of x/s
+M(s) = 1/n * Sigma({f(y) : y in power(x/s)}), where n is the size of the power set of x/s
 
 This formulation is called the Shapley Value! It was originally from game theory and was used to calculate "fair" contributions of individuals to a group score. However, treating model features as individual players (such as pixels in an image), we can calculate contributions of each feature to the output of a model for individual data samples. 
 
