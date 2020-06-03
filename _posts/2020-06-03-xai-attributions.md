@@ -70,15 +70,15 @@ M(C) = (f({A,B,C,D}) - f({A,B,D}) + f({C})) / 2 = (4 - 4 + 3) / 2 = 3/2 = 1.5
 
 M(D) = (f({A,B,C,D}) - f({A,B,C}) + f({D})) / 2 = (4 - 4 + 3) / 2 = 3/2 = 1.5
 
-Great! Now the bonus points seem better distributed. However, this is just hinting at the mathematically "fair" solution (indeed, if answer overlaps is more complicated, the above method will quickly fall short).
+Great! Now the bonus points seem better distributed. However, this is just hinting at the mathematically "fair" solution (indeed, if answer overlaps are more complicated, the above method will quickly fall short).
 
-Give student s in group x, our current formulation for M(s) is
+Given student s in group x, our current formulation for M(s) is
 
-M(s) = (f(x) - f(x/s) + f({s})) / 2
+M(s) = (f(x) - f(x/s)  +  f({s})) / 2
 
 This is equal to 
 
-M(s) = (f(x) - f(x/s) + f({s}) - f({})) / 2
+M(s) = (f(x) - f(x/s)  +  f({s}) - f({s}/s)) / 2 = (f(x) - f(x/s)  +  f({s}) - f({})) / 2
 
 since we can say the score assigned to a group of no students is zero. Do you see a pattern? We are looking at two subgroups (x/s and the empty subgroup) of the original group x that are missing s, and calculating the average score difference when s is added to those subgroups. The complete answer is to calculate this average over all subgroups missing s (the power set of x/s).
 
