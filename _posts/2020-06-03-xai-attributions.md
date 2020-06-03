@@ -78,7 +78,7 @@ M(s) = (f(x) - f(x/s)  +  f({s})) / 2
 
 This is equal to 
 
-M(s) = (f(x) - f(x/s)  +  f({s}) - f({s}/s)) / 2 = (f(x) - f(x/s)  +  f({s}) - f({})) / 2
+M(s) = (f(x) - f(x/s)  +  f({s}) - f({})) / 2 = (f(x) - f(x/s)  +  f({s}) - f({s}/s)) / 2
 
 since we can say the score assigned to a group of no students is zero. Do you see a pattern? We are looking at two subgroups (x/s and the empty subgroup) of the original group x that are missing s, and calculating the average score difference when s is added to those subgroups. The complete answer is to calculate this average over all subgroups missing s (the power set of x/s).
 
