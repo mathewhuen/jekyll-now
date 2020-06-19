@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XAI - Attributions
+title: XAI - Attributions (WIP)
 ---
 
 One of the most complex topics in XAI is attributions--calculating how much of an effect specific inputs to a model have on its outputs. For example, we would expect that certain pixels were more important than others in a classification of an image. In the image below, it is likely that pixels from the puppy are more important than pixels from the background. Attributions is the precise calculation of this importance. 
